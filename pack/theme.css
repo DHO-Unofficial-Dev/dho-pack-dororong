@@ -1,0 +1,250 @@
+/* 항해 정보 HUD 전체 */
+[data-dho-surface="navigator.hud.info"] {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: relative;
+  padding-top: 1px;
+  padding-right: 2px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  color: #fff4e8;
+}
+
+/* 도로롱 심야 패널 */
+[data-dho-surface="navigator.hud.info"] [data-dho-part="frame"] {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  color: #fff4e8;
+  background-color: #190f2e;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #ff4fa3;
+  border-right-color: #ff4fa3;
+  border-bottom-color: #ff4fa3;
+  border-left-color: #ff4fa3;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px #0b0714cc;
+}
+
+/* 도착 안내 */
+[data-dho-surface="navigator.hud.info"] [data-dho-part="arrival"] {
+  padding-top: 6px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  color: #190f2e;
+  background-color: #63f3cf;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #ff4fa3;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* 목적지와 경유지 진행 */
+[data-dho-surface="navigator.hud.info"] [data-dho-part="destination"] {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  color: #fff4e8;
+  background-color: #281542;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #7f2c68;
+}
+
+[data-dho-surface="navigator.hud.info"] [data-dho-part="waypoint-progress"] {
+  align-self: center;
+  padding-top: 1px;
+  padding-right: 6px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  color: #190f2e;
+  background-color: #b69cff;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #fff4e8;
+  border-right-color: #fff4e8;
+  border-bottom-color: #fff4e8;
+  border-left-color: #fff4e8;
+  border-radius: 8px;
+  font-family: host-mono;
+  font-size: 10px;
+  text-align: right;
+}
+
+/* 조타·거리·속도 계기 */
+[data-dho-surface="navigator.hud.info"] [data-dho-part="turn"],
+[data-dho-surface="navigator.hud.info"] [data-dho-part="distance"],
+[data-dho-surface="navigator.hud.info"] [data-dho-part="speed"] {
+  box-sizing: border-box;
+  padding-top: 1px;
+  padding-right: 7px;
+  padding-bottom: 1px;
+  padding-left: 7px;
+  color: #fff4e8;
+  background-color: #190f2e;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #4b285f;
+  font-size: 10px;
+  line-height: 1.15;
+}
+
+[data-dho-surface="navigator.hud.info"] [data-dho-part="turn"] {
+  color: #ff4fa3;
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: #ff4fa3;
+}
+
+[data-dho-surface="navigator.hud.info"] [data-dho-part="distance"] {
+  color: #b69cff;
+  text-align: right;
+}
+
+[data-dho-surface="navigator.hud.info"] [data-dho-part="speed"] {
+  color: #63f3cf;
+  text-align: right;
+}
+
+/* 연결·대기 상태 */
+[data-dho-surface="navigator.hud.info"] [data-dho-part="status"] {
+  margin-top: 0px;
+  padding-top: 1px;
+  padding-right: 7px;
+  padding-bottom: 1px;
+  padding-left: 7px;
+  color: #63f3cf;
+  background-color: #281542;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #7f2c68;
+  font-size: 10px;
+  line-height: 1.15;
+}
+
+/* 상단 조향 방향 리본 */
+[data-dho-surface="navigator.hud.steering"] {
+  width: 100%;
+  height: 100%;
+  color: #fff4e8;
+}
+
+[data-dho-surface="navigator.hud.steering"] [data-dho-part="guide-line"] {
+  background-color: #ff4fa366;
+}
+
+[data-dho-surface="navigator.hud.steering"] [data-dho-part="tick-track"] {
+  color: #b69cff;
+}
+
+[data-dho-surface="navigator.hud.steering"] [data-dho-part="compass-marker"] {
+  color: #fff4e8;
+}
+
+[data-dho-surface="navigator.hud.steering"] [data-dho-part="target"] {
+  color: #ff4fa3;
+}
+
+[data-dho-surface="navigator.hud.steering"] [data-dho-part="target-marker"] {
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #ff4fa3;
+  border-right-color: #ff4fa3;
+  border-bottom-color: #ff4fa3;
+  border-left-color: #ff4fa3;
+  background-color: #190f2e;
+  box-shadow: 0 0 8px #ff4fa3;
+}
+
+[data-dho-surface="navigator.hud.steering"] [data-dho-part="target-label"] {
+  color: #fff4e8;
+  background-color: #190f2e;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #ff4fa3;
+  border-right-color: #ff4fa3;
+  border-bottom-color: #ff4fa3;
+  border-left-color: #ff4fa3;
+  border-radius: 8px;
+}
+
+[data-dho-surface="navigator.hud.steering"] [data-dho-part="direction-marker"] {
+  color: #63f3cf;
+}
+
+[data-dho-surface="navigator.hud.steering"] [data-dho-part="heading-label"] {
+  color: #63f3cf;
+}
+
+/* 중앙 조향 표식 */
+[data-dho-surface="navigator.hud.steering.center"] {
+  width: 100%;
+  height: 100%;
+  color: #ff4fa3;
+}
+
+[data-dho-surface="navigator.hud.steering.center"] [data-dho-part="vertical-line"] {
+  width: 2px;
+  height: 104px;
+  background-color: #ff4fa3;
+  box-shadow: 0 0 8px #b69cff;
+}
+
+[data-dho-surface="navigator.hud.steering.center"] [data-dho-part="horizontal-line"] {
+  width: 72px;
+  height: 2px;
+  background-color: #ff4fa3;
+  box-shadow: 0 0 8px #b69cff;
+}
+
+[data-dho-surface="navigator.hud.steering.center"] [data-dho-part="diamond"] {
+  width: 14px;
+  height: 14px;
+  color: #63f3cf;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #63f3cf;
+  border-right-color: #63f3cf;
+  border-bottom-color: #63f3cf;
+  border-left-color: #63f3cf;
+}

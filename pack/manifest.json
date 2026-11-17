@@ -1,0 +1,427 @@
+{
+  "formatVersion": 1,
+  "packId": "personal.dororong.navigation-log",
+  "name": "도로롱 항해일지",
+  "author": "나물볶음",
+  "version": "1.0.0",
+  "license": "LicenseRef-Dororong-Theme-Reference",
+  "publisher": {
+    "id": "personal.dororong",
+    "name": "나물볶음"
+  },
+  "source": {
+    "name": "나물볶음 · 도로롱 항해일지",
+    "url": "https://github.com/DHO-Unofficial-Dev/dho-pack-dororong"
+  },
+  "thumbnail": "thumbnail.jpg",
+  "compatibility": {
+    "minimumManagerVersion": "2.2.0",
+    "maximumManagerVersionExclusive": "3.0.0"
+  },
+  "files": {},
+  "componentRequirements": {},
+  "components": {
+    "surfaceTheme": {
+      "id": "personal.dororong.navigation-log.surfaces",
+      "name": "도로롱 HUD",
+      "schemaVersion": 1,
+      "stylesheet": "theme.css",
+      "surfaces": {
+        "navigator.hud.info": {
+          "contractVersion": 1
+        },
+        "navigator.hud.steering": {
+          "contractVersion": 1
+        },
+        "navigator.hud.steering.center": {
+          "contractVersion": 1
+        }
+      }
+    },
+    "moduleSurfaceTheme": {
+      "id": "personal.dororong.navigation-log.module",
+      "name": "도로롱 항해 Module",
+      "schemaVersion": 1,
+      "targets": [
+        {
+          "moduleId": "org.dho.example.navigation",
+          "surfaceId": "module.org.dho.example.navigation.main",
+          "contractVersion": 1,
+          "contractSha256": "44d749b6c1fe04f85a0c1038266b11c64f7b105eb09a31bb36fbac1b4b2c3c03",
+          "stylesheet": "module-theme/styles/navigation-dororong.css"
+        }
+      ]
+    },
+    "navigatorTheme": {
+      "id": "personal.dororong.navigation-log.navigator",
+      "name": "도로롱 심야 화면",
+      "colors": {
+        "background": "#10091F",
+        "surface": "#21123A",
+        "text": "#FFF4E8",
+        "mutedText": "#CBB4DC",
+        "line": "#7F2C68",
+        "rule": "#4B285F",
+        "accent": "#FF4FA3",
+        "danger": "#FF6B7A",
+        "focus": "#63F3CF"
+      },
+      "cornerRadius": 12
+    },
+    "mapAppearance": {
+      "id": "personal.dororong.navigation-log.map",
+      "name": "도로롱 심야 해도",
+      "colors": {
+        "surface": "#120824",
+        "text": "#FFF4E8",
+        "mutedText": "#CBB4DC",
+        "border": "#FF4FA3",
+        "accent": "#FF4FA3",
+        "connected": "#63F3CF",
+        "waiting": "#FFD36B",
+        "editText": "#FFF4E8"
+      },
+      "frame": {
+        "statusSurfaceOpacity": 0.86,
+        "highlightedSurfaceOpacity": 0.92,
+        "borderOpacity": 0.9,
+        "editSurfaceOpacity": 0.94,
+        "editBorderWidth": 2
+      },
+      "mapTheme": {
+        "vectorOpacity": 0.96,
+        "oceanColor": "#140829",
+        "oceanOpacity": 0.34,
+        "showLandFill": true,
+        "landFillColor": "#55246F",
+        "landFillOpacity": 0.5,
+        "showCoastline": true,
+        "coastlineColor": "#D4B8FF",
+        "coastlineOpacity": 0.92,
+        "coastlineWidth": 1.4,
+        "coastlinePattern": "solid",
+        "showSeaRegions": true,
+        "seaRegionColor": "#FF4FA3",
+        "seaRegionOpacity": 0.72,
+        "seaRegionWidth": 1.1,
+        "seaRegionPattern": "dashed",
+        "showCurrentSeaRegion": true,
+        "currentSeaRegionColor": "#63F3CF",
+        "currentSeaRegionOpacity": 0.24,
+        "showSeaRegionLabels": true,
+        "seaRegionLabelColor": "#FF9AC8",
+        "seaRegionLabelOpacity": 0.9,
+        "seaRegionLabelSize": 10
+      },
+      "navigationTheme": {
+        "course": {
+          "color": "#63F3CF",
+          "pattern": "solid",
+          "width": 2.6,
+          "opacity": 0.96
+        },
+        "compass": {
+          "color": "#FFF4E8",
+          "pattern": "solid",
+          "width": 1.2,
+          "opacity": 0.7
+        },
+        "mouse": {
+          "color": "#B69CFF",
+          "pattern": "dotted",
+          "width": 1.2,
+          "opacity": 0.58
+        },
+        "track": {
+          "color": "#B69CFF",
+          "pattern": "solid",
+          "width": 1.7,
+          "opacity": 0.8
+        },
+        "route": {
+          "color": "#FF4FA3",
+          "pattern": "dashed",
+          "width": 2.8,
+          "opacity": 1.0
+        }
+      }
+    },
+    "markerSet": {
+      "id": "personal.dororong.navigation-log.markers",
+      "name": "도로롱 항해 표식",
+      "assets": {
+        "ship": {
+          "path": "components/marker-set/assets/ship.png",
+          "displayWidth": 30,
+          "displayHeight": 30,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "waypoint": {
+          "path": "components/marker-set/assets/waypoint.svg",
+          "displayWidth": 24,
+          "displayHeight": 24,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "automatic-waypoint": {
+          "path": "components/marker-set/assets/automatic-waypoint.svg",
+          "displayWidth": 18,
+          "displayHeight": 18,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "destination": {
+          "path": "components/marker-set/assets/destination.svg",
+          "displayWidth": 34,
+          "displayHeight": 34,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "poi-port": {
+          "path": "components/marker-set/assets/poi-port.svg",
+          "displayWidth": 24,
+          "displayHeight": 24,
+          "anchorX": 0.5,
+          "anchorY": 0.92,
+          "rotateWithHeading": false
+        },
+        "poi-guild-city": {
+          "path": "components/marker-set/assets/poi-guild-city.svg",
+          "displayWidth": 24,
+          "displayHeight": 24,
+          "anchorX": 0.234,
+          "anchorY": 0.89,
+          "rotateWithHeading": false
+        },
+        "poi-landing": {
+          "path": "components/marker-set/assets/poi-landing.svg",
+          "displayWidth": 24,
+          "displayHeight": 24,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "poi-outskirts": {
+          "path": "components/marker-set/assets/poi-outskirts.svg",
+          "displayWidth": 24,
+          "displayHeight": 24,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "poi-inland": {
+          "path": "components/marker-set/assets/poi-inland.svg",
+          "displayWidth": 24,
+          "displayHeight": 24,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "poi-inland-city": {
+          "path": "components/marker-set/assets/poi-inland-city.svg",
+          "displayWidth": 24,
+          "displayHeight": 24,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "poi-private-farm": {
+          "path": "components/marker-set/assets/poi-private-farm.svg",
+          "displayWidth": 24,
+          "displayHeight": 24,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "poi-sea": {
+          "path": "components/marker-set/assets/poi-sea.svg",
+          "displayWidth": 24,
+          "displayHeight": 24,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "personal-star": {
+          "path": "components/marker-set/assets/personal-star.svg",
+          "displayWidth": 26,
+          "displayHeight": 26,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "personal-port": {
+          "path": "components/marker-set/assets/personal-port.svg",
+          "displayWidth": 26,
+          "displayHeight": 26,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "personal-trade": {
+          "path": "components/marker-set/assets/personal-trade.svg",
+          "displayWidth": 26,
+          "displayHeight": 26,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "personal-danger": {
+          "path": "components/marker-set/assets/personal-danger.svg",
+          "displayWidth": 26,
+          "displayHeight": 26,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "personal-discovery": {
+          "path": "components/marker-set/assets/personal-discovery.svg",
+          "displayWidth": 26,
+          "displayHeight": 26,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        },
+        "personal-memo": {
+          "path": "components/marker-set/assets/personal-memo.svg",
+          "displayWidth": 26,
+          "displayHeight": 26,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "rotateWithHeading": false
+        }
+      },
+      "slots": {
+        "ship": "ship",
+        "waypoint": "waypoint",
+        "automaticWaypoint": "automatic-waypoint",
+        "destination": "destination",
+        "poi": {
+          "port": "poi-port",
+          "guild_city": "poi-guild-city",
+          "landing": "poi-landing",
+          "outskirts": "poi-outskirts",
+          "inland": "poi-inland",
+          "inland_city": "poi-inland-city",
+          "private_farm": "poi-private-farm",
+          "sea": "poi-sea"
+        },
+        "personal": {
+          "star": "personal-star",
+          "port": "personal-port",
+          "trade": "personal-trade",
+          "danger": "personal-danger",
+          "discovery": "personal-discovery",
+          "memo": "personal-memo"
+        }
+      },
+      "ship": {
+        "background": "#190F2E",
+        "backgroundOpacity": 0.92,
+        "border": "#FFF4E8",
+        "fill": "#63F3CF",
+        "stroke": "#7F2C68",
+        "radius": 9,
+        "length": 11,
+        "halfWidth": 6,
+        "strokeWidth": 1.5
+      },
+      "route": {
+        "fill": "#FF4FA3",
+        "text": "#190F2E",
+        "inactiveStroke": "#775C8E",
+        "waypointShape": "circle",
+        "destinationShape": "diamond",
+        "waypointRadius": 11,
+        "destinationRadius": 13,
+        "strokeWidth": 2.5,
+        "automatic": {
+          "fill": "#63F3CF",
+          "stroke": "#190F2E",
+          "shape": "diamond",
+          "radius": 7,
+          "strokeWidth": 1.5
+        }
+      },
+      "poi": {
+        "background": "#190F2E",
+        "backgroundOpacity": 0.9,
+        "border": "#FFF4E8",
+        "focus": "#63F3CF",
+        "focusText": "#FFF4E8",
+        "labelText": "#FFF4E8",
+        "labelHalo": "#10091F",
+        "radius": 8,
+        "glyphRadius": 5,
+        "labelFontSize": 10,
+        "types": {
+          "port": {
+            "fill": "#FF4FA3",
+            "shape": "circle"
+          },
+          "guild_city": {
+            "fill": "#B69CFF",
+            "shape": "diamond"
+          },
+          "landing": {
+            "fill": "#63F3CF",
+            "shape": "triangle"
+          },
+          "outskirts": {
+            "fill": "#FF9AC8",
+            "shape": "square"
+          },
+          "inland": {
+            "fill": "#B69CFF",
+            "shape": "diamond"
+          },
+          "inland_city": {
+            "fill": "#FFD36B",
+            "shape": "circle"
+          },
+          "private_farm": {
+            "fill": "#78E6AD",
+            "shape": "square"
+          },
+          "sea": {
+            "fill": "#63DFF3",
+            "shape": "diamond"
+          }
+        }
+      },
+      "personal": {
+        "border": "#FFF4E8",
+        "glyph": "#190F2E",
+        "radius": 11,
+        "glyphStrokeWidth": 2,
+        "icons": {
+          "star": {
+            "fill": "#FFD36B"
+          },
+          "port": {
+            "fill": "#63DFF3"
+          },
+          "trade": {
+            "fill": "#FF9AC8"
+          },
+          "danger": {
+            "fill": "#FF6B7A"
+          },
+          "discovery": {
+            "fill": "#63F3CF"
+          },
+          "memo": {
+            "fill": "#B69CFF"
+          }
+        }
+      }
+    },
+    "appIcon": {
+      "window": "components/app-icon/window.png"
+    }
+  }
+}
