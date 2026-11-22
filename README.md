@@ -17,7 +17,7 @@
 3. 설치한 팩을 켭니다. 직접 옮긴 HUD 위치·크기·투명도는 팩보다 우선합니다.
 
 기존 `도로롱 항해일지` 1.0.0 또는 시험판 1.0.6을 사용했다면 먼저 비활성화하세요.
-1.0.1부터 팩 ID는 **`com.namulmix.dororong`**, 제작자 ID는 `com.namulmix`입니다.
+1.0.1부터 팩 ID는 **`dho.namulmix.dororong`**, 제작자 ID는 `dho.namulmix`입니다.
 기존 팩과 ID가 달라 이번 판은 별도 팩으로 설치되며 설정을 자동 이전하지 않습니다.
 새 팩을 켠 뒤 정상 표시를 확인하면 예전 팩을 제거할 수 있습니다. 이후 업데이트는 새 ID를 유지합니다.
 
@@ -64,7 +64,7 @@
 node tools/validate-pack.mjs /path/to/dho-pack-dororong/pack
 node tools/build-dho-pack.mjs /path/to/dho-pack-dororong/pack /path/to/dororong-1.0.1.dho-pack
 node tools/verify-archive.mjs /path/to/dororong-1.0.1.dho-pack
-node tools/check-update-response.mjs https://raw.githubusercontent.com/DHO-Unofficial-Dev/dho-pack-dororong/main/update-check.json --kind pack --id com.namulmix.dororong
+node tools/check-update-response.mjs https://raw.githubusercontent.com/DHO-Unofficial-Dev/dho-pack-dororong/main/update-check.json --kind pack --id dho.namulmix.dororong
 ```
 
 ## 라이선스
