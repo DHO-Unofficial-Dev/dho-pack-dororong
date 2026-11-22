@@ -1,28 +1,31 @@
 {
   "formatVersion": 1,
-  "packId": "personal.dororong.navigation-log",
-  "name": "도로롱 항해일지",
+  "packId": "com.namulmix.dororong",
+  "name": "도로롱의 항해일지",
   "author": "나물볶음",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "LicenseRef-Dororong-Theme-Reference",
   "publisher": {
-    "id": "personal.dororong",
+    "id": "com.namulmix",
     "name": "나물볶음"
   },
   "source": {
-    "name": "나물볶음 · 도로롱 항해일지",
+    "name": "나물볶음 · 도로롱의 항해일지",
     "url": "https://github.com/DHO-Unofficial-Dev/dho-pack-dororong"
   },
   "thumbnail": "thumbnail.jpg",
   "compatibility": {
-    "minimumManagerVersion": "2.2.0",
+    "minimumManagerVersion": "2.2.1",
     "maximumManagerVersionExclusive": "3.0.0"
+  },
+  "updateCheck": {
+    "url": "https://raw.githubusercontent.com/DHO-Unofficial-Dev/dho-pack-dororong/main/update-check.json"
   },
   "files": {},
   "componentRequirements": {},
   "components": {
     "surfaceTheme": {
-      "id": "personal.dororong.navigation-log.surfaces",
+      "id": "com.namulmix.dororong.surfaces",
       "name": "도로롱 HUD",
       "schemaVersion": 1,
       "stylesheet": "theme.css",
@@ -39,7 +42,7 @@
       }
     },
     "moduleSurfaceTheme": {
-      "id": "personal.dororong.navigation-log.module",
+      "id": "com.namulmix.dororong.module",
       "name": "도로롱 항해 Module",
       "schemaVersion": 1,
       "targets": [
@@ -53,7 +56,7 @@
       ]
     },
     "navigatorTheme": {
-      "id": "personal.dororong.navigation-log.navigator",
+      "id": "com.namulmix.dororong.navigator",
       "name": "도로롱 심야 화면",
       "colors": {
         "background": "#10091F",
@@ -69,7 +72,7 @@
       "cornerRadius": 12
     },
     "mapAppearance": {
-      "id": "personal.dororong.navigation-log.map",
+      "id": "com.namulmix.dororong.map",
       "name": "도로롱 심야 해도",
       "colors": {
         "surface": "#120824",
@@ -147,7 +150,7 @@
       }
     },
     "markerSet": {
-      "id": "personal.dororong.navigation-log.markers",
+      "id": "com.namulmix.dororong.markers",
       "name": "도로롱 항해 표식",
       "assets": {
         "ship": {

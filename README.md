@@ -1,9 +1,9 @@
-# 도로롱 항해일지
+# 도로롱의 항해일지
 
 나물볶음이 제작한 DHO Navigator용 **Midnight Rose** 테마 리소스팩입니다.
 도로롱 선박, 장미 목적지, 찻잔 경유지와 유형별 거점 마커로 항해 화면을 꾸밉니다.
 
-![도로롱 항해일지](pack/thumbnail.jpg)
+![도로롱의 항해일지](pack/thumbnail.jpg)
 
 ## 받기
 
@@ -12,12 +12,23 @@
 
 ## 설치
 
-1. DHO Navigator 2.2.0 이상을 켭니다.
-2. 왼쪽 위 로고 › Navigator 설정 › 팩 탭 › `팩 설치`에서 받은 `.dho-pack` 파일을 고릅니다.
+1. DHO Navigator 2.2.1 이상(3.0.0 미만)을 켭니다.
+2. `Navigator 설정 › 리소스팩 › 리소스팩 설치`에서 받은 `.dho-pack` 파일을 고릅니다.
 3. 설치한 팩을 켭니다. 직접 옮긴 HUD 위치·크기·투명도는 팩보다 우선합니다.
 
-기존 도로롱 시험판 `1.0.6`을 사용했다면 먼저 비활성화하세요. 정식 `1.0.0`은 별도 팩 ID
-`personal.dororong.navigation-log`로 설치됩니다. 이후 정식판 업데이트는 이 ID를 유지합니다.
+기존 `도로롱 항해일지` 1.0.0 또는 시험판 1.0.6을 사용했다면 먼저 비활성화하세요.
+1.0.1부터 팩 ID는 **`com.namulmix.dororong`**, 제작자 ID는 `com.namulmix`입니다.
+기존 팩과 ID가 달라 이번 판은 별도 팩으로 설치되며 설정을 자동 이전하지 않습니다.
+새 팩을 켠 뒤 정상 표시를 확인하면 예전 팩을 제거할 수 있습니다. 이후 업데이트는 새 ID를 유지합니다.
+
+## 1.0.1 — Navigator 2.2.1 지원
+
+- 팩 이름을 **도로롱의 항해일지**로 변경했습니다.
+- 제작자 표시명 **나물볶음**, **Midnight Rose** 디자인과 24px 거점 마커를 유지합니다.
+- Navigator 2.2.1 공개 제작 키트의 검사·빌드·아카이브 검증을 통과했습니다.
+- 새 버전 확인 주소를 연결했습니다. 앱 시작 때 배포 사이트에 새 버전을 묻고 리소스팩 관리 목록에 안내합니다.
+  자동 설치는 하지 않으며 `앱 설정 › 모듈·리소스팩 › 시작할 때 새 버전 확인`에서 끌 수 있습니다.
+- 새 버전 확인 기능 때문에 최소 Navigator 버전은 2.2.1입니다. 2.2.0 사용자는 Navigator부터 업데이트하세요.
 
 ## 구성
 
@@ -51,8 +62,9 @@
 
 ```sh
 node tools/validate-pack.mjs /path/to/dho-pack-dororong/pack
-node tools/build-dho-pack.mjs /path/to/dho-pack-dororong/pack /path/to/dororong-1.0.0.dho-pack
-node tools/verify-archive.mjs /path/to/dororong-1.0.0.dho-pack
+node tools/build-dho-pack.mjs /path/to/dho-pack-dororong/pack /path/to/dororong-1.0.1.dho-pack
+node tools/verify-archive.mjs /path/to/dororong-1.0.1.dho-pack
+node tools/check-update-response.mjs https://raw.githubusercontent.com/DHO-Unofficial-Dev/dho-pack-dororong/main/update-check.json --kind pack --id com.namulmix.dororong
 ```
 
 ## 라이선스
