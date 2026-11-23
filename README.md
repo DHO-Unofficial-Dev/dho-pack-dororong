@@ -21,6 +21,12 @@
 기존 팩과 ID가 달라 이번 판은 별도 팩으로 설치되며 설정을 자동 이전하지 않습니다.
 새 팩을 켠 뒤 정상 표시를 확인하면 예전 팩을 제거할 수 있습니다. 이후 업데이트는 새 ID를 유지합니다.
 
+## 1.0.2 — 항해선 스타일과 라이선스
+
+- 실제 이동 경로선(`course`)을 크림색 점선으로 변경했습니다.
+- 현재 조향 방향선(`compass`)을 청록색 실선으로 변경했습니다.
+- 팩 라이선스를 CC-BY-4.0으로 변경했습니다.
+
 ## 1.0.1 — Navigator 2.2.1 지원
 
 - 팩 이름을 **도로롱의 항해일지**로 변경했습니다.
@@ -62,12 +68,12 @@
 
 ```sh
 node tools/validate-pack.mjs /path/to/dho-pack-dororong/pack
-node tools/build-dho-pack.mjs /path/to/dho-pack-dororong/pack /path/to/dororong-1.0.1.dho-pack
-node tools/verify-archive.mjs /path/to/dororong-1.0.1.dho-pack
+node tools/build-dho-pack.mjs /path/to/dho-pack-dororong/pack /path/to/dororong-1.0.2.dho-pack
+node tools/verify-archive.mjs /path/to/dororong-1.0.2.dho-pack
 node tools/check-update-response.mjs https://raw.githubusercontent.com/DHO-Unofficial-Dev/dho-pack-dororong/main/update-check.json --kind pack --id dho.namulmix.dororong
 ```
 
 ## 라이선스
 
-제작자: 나물볶음. 원본의 별도 재배포 허락 없는 라이선스 조건을 유지합니다.
+제작자: 나물볶음. 팩 라이선스는 [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)입니다.
 캐릭터 관련 권리는 각 권리자에게 있으며, 자세한 범위는 [LICENSE](LICENSE)를 참고하세요.
