@@ -3,7 +3,7 @@
   "packId": "dho.namulmix.dororong",
   "name": "도로롱의 항해일지",
   "author": "나물볶음",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "CC-BY-4.0",
   "publisher": {
     "id": "dho.namulmix",
@@ -120,13 +120,13 @@
         "course": {
           "color": "#FFF4E8",
           "pattern": "dotted",
-          "width": 2.6,
+          "width": 1.2,
           "opacity": 0.96
         },
         "compass": {
           "color": "#63F3CF",
           "pattern": "solid",
-          "width": 1.2,
+          "width": 2.6,
           "opacity": 0.7
         },
         "mouse": {

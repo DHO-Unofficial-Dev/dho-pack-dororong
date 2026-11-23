@@ -21,6 +21,11 @@
 기존 팩과 ID가 달라 이번 판은 별도 팩으로 설치되며 설정을 자동 이전하지 않습니다.
 새 팩을 켠 뒤 정상 표시를 확인하면 예전 팩을 제거할 수 있습니다. 이후 업데이트는 새 ID를 유지합니다.
 
+## 1.0.3 — 항해선 굵기
+
+- 실제 이동 경로선은 크림색 점선으로 유지하고 굵기를 1.2로 줄였습니다.
+- 나침반 조향선은 청록색 실선으로 유지하고 굵기를 2.6으로 늘렸습니다.
+
 ## 1.0.2 — 항해선 스타일과 라이선스
 
 - 실제 이동 경로선(`course`)을 크림색 점선으로 변경했습니다.
@@ -68,8 +73,8 @@
 
 ```sh
 node tools/validate-pack.mjs /path/to/dho-pack-dororong/pack
-node tools/build-dho-pack.mjs /path/to/dho-pack-dororong/pack /path/to/dororong-1.0.2.dho-pack
-node tools/verify-archive.mjs /path/to/dororong-1.0.2.dho-pack
+node tools/build-dho-pack.mjs /path/to/dho-pack-dororong/pack /path/to/dororong-1.0.3.dho-pack
+node tools/verify-archive.mjs /path/to/dororong-1.0.3.dho-pack
 node tools/check-update-response.mjs https://raw.githubusercontent.com/DHO-Unofficial-Dev/dho-pack-dororong/main/update-check.json --kind pack --id dho.namulmix.dororong
 ```
 
